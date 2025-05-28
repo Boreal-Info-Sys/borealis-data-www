@@ -3,7 +3,7 @@ title: Privacy Policy
 description: Privacy policy
 ---
 
-Last updated: 2022-06-17
+Last updated: 2025-05-28
 
 ## Personal information we collect and store
 
@@ -32,4 +32,4 @@ Our services are not targeted to minors. We do not knowingly collect or store pe
 
 We reserve the right to modify this privacy policy at any time and without prior notice. All changes take effect immediately when they are published on this website.
 
-A full history of changes to this privacy policy may be found [here](https://github.com/OldSneerJaw/borealis-data-www/commits/main/_pages/privacy.md).
+A full history of changes to this privacy policy may be found [here](https://github.com/Boreal-Info-Sys/borealis-data-www/commits/main/_pages/privacy.md).

@@ -3,7 +3,7 @@ title: Borealis Heroku Elements Supplemental Terms of Use
 description: Terms of use for Heroku Elements provided by Boreal Information Systems Inc.
 ---
 
-_Effective 2022-11-18_
+_Effective 2025-05-28_
 
 ## 1. General Terms
 
@@ -19,4 +19,4 @@ _Effective 2022-11-18_
 
 **2.3 Governing Law, Venue.** The Specific Terms of Use are governed by the laws of the Province of British Columbia, Canada without regard to its conflict of laws principles. You and Provider agree to submit to the exclusive jurisdiction of the courts located within the City of Vancouver, British Columbia to resolve any legal matter arising from the Specific Terms of Use.
 
-**2.4 Updates to the Terms.** A full history of changes to these Supplemental Terms may be found [here](https://github.com/OldSneerJaw/borealis-data-www/commits/main/_pages/heroku-elements-supplemental-terms-of-use.md).
+**2.4 Updates to the Terms.** A full history of changes to these Supplemental Terms may be found [here](https://github.com/Boreal-Info-Sys/borealis-data-www/commits/main/_pages/heroku-elements-supplemental-terms-of-use.md).
