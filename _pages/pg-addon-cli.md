@@ -100,11 +100,11 @@ And to see a list of all installed PostgreSQL extensions, use the `borealis-pg:e
 $ heroku borealis-pg:extensions --app sushi
 ```
 
-A list of PostgreSQL extensions that are supported by Borealis Isolated Postgres may be found [here](./pg-extensions-support). [x](#data-integrations)
+A list of PostgreSQL extensions that are supported by Borealis Isolated Postgres may be found [here](./pg-extensions-support).
 
 #### Database users
 
-The Heroku app is automatically assigned read/write and read-only database user credentials when an add-on is provisioned. And personal database user credentials are automatically created/rotated every time an authorized user executes one of the `borealis-pg:psql` or `borealis-pg:tunnel` commands (or `borealis-pg:run` with the `--personal-user` option). To list the active database users, execute the `borealis-pg:users` command:
+The Heroku app is automatically assigned both read/write and read-only database user credentials when an add-on is provisioned. And personal database user credentials are automatically created/rotated every time an authorized user executes one of the `borealis-pg:psql` or `borealis-pg:tunnel` commands (or `borealis-pg:run` with the `--personal-user` option). To list the active database users, execute the `borealis-pg:users` command:
 
 ```shell
 $ heroku borealis-pg:users --app sushi
@@ -117,6 +117,28 @@ $ heroku borealis-pg:users:reset --app sushi
 ```
 
 A full database credentials reset will generate new usernames and passwords for the Heroku app's read/write and read-only user roles. The previous Heroku app user credentials will continue to remain valid for several minutes afterward to ensure there is an overlap between them to prevent application downtime. All personal database user roles will be deactivated, but the next time an affected user executes one of the `borealis-pg:psql` or `borealis-pg:tunnel` commands (or `borealis-pg:run` with the `--personal-user` option), their database user roles will be reactivated and new credentials will be generated. No database objects (tables, views, indexes, etc.) or table data will be lost during a full database credentials reset.
+
+#### PostgreSQL major version upgrades
+
+You are in control of when to initiate an upgrade of your single tenant add-on database to a newer PostgreSQL major version. To check whether a newer version is available, execute `borealis-pg:upgrade:info`:
+
+```shell
+$ heroku borealis-pg:upgrade:info --app sushi
+```
+
+If the upgrade status is "available", initiate an upgrade to the next major version with `borealis-pg:upgrade:execute`:
+
+```shell
+$ heroku borealis-pg:upgrade:execute --app sushi
+```
+
+If you change your mind before the upgrade process is finished, you can cancel it with `borealis-pg:upgrade:cancel` with no adverse effects:
+
+```shell
+$ heroku borealis-pg:upgrade:cancel --app sushi
+```
+
+There are several limitations and restrictions that apply to the upgrade process that are detailed in the [PostgreSQL Version Upgrades](https://devcenter.heroku.com/articles/borealis-pg#postgresql-version-upgrades) documentation.
 
 #### Database restore and clone
 
