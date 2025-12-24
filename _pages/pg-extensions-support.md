@@ -34,7 +34,7 @@ The following list of [PostgreSQL extensions](https://www.postgresql.org/docs/17
 - [lo](https://www.postgresql.org/docs/17/lo.html)
 - [ltree](https://www.postgresql.org/docs/17/ltree.html)
 - [moddatetime](https://www.postgresql.org/docs/17/contrib-spi.html#CONTRIB-SPI-MODDATETIME)
-- [pg_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html)
+- [pg_bigm](https://github.com/pgbigm/pg_bigm/blob/REL1_2_STABLE/docs/pg_bigm_en.md)
 - [pg_freespacemap](https://www.postgresql.org/docs/17/pgfreespacemap.html)
 - [pg_prewarm](https://www.postgresql.org/docs/17/pgprewarm.html)
 - [pg_similarity](https://github.com/eulerto/pg_similarity/tree/pg_similarity_1_0)
