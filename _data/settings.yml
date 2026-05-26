@@ -1,6 +1,10 @@
 basic_settings:
   site_title: Borealis
-  favicon_image: /assets/img/favicon.png
+  favicon_ico: /assets/img/favicon.ico
+  favicon_16px_png: /assets/img/favicon-16x16.png
+  favicon_32px_png: /assets/img/favicon-32x32.png
+  favicon_48px_png: /assets/img/favicon-48x48.png
+  favicon_svg: /assets/img/favicon.svg
 
 header_settings:
   # Choose a color for your header [blue, dark, light].
