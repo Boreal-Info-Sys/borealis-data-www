@@ -60,6 +60,7 @@ The following list of [PostgreSQL extensions](https://www.postgresql.org/docs/17
 - [prefix](https://github.com/dimitri/prefix/tree/v1.2.10)
 - [rdkit](https://www.rdkit.org/docs/Cartridge.html)
 - [refint](https://www.postgresql.org/docs/17/contrib-spi.html#CONTRIB-SPI-REFINT)
+- [roaringbitmap](https://github.com/ChenHuajun/pg_roaringbitmap/tree/v1.1.0) (not yet available for PostgreSQL 14, 15, 16 or 17)
 - [seg](https://www.postgresql.org/docs/17/seg.html)
 - [sslinfo](https://www.postgresql.org/docs/17/sslinfo.html)
 - [tablefunc](https://www.postgresql.org/docs/17/tablefunc.html)
