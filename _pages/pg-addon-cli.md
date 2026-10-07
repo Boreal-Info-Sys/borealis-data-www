@@ -26,8 +26,6 @@ With the pre-requisites installed, simply execute the following on the command l
 $ heroku plugins:install borealis-pg-cli
 ```
 
-If you notice build warnings from `gyp` related to `cpu-features` during the preceeding operation, don't worry; this is an optional dependency that will not impact use of the plugin.
-
 When installation is complete, execute the following to see the root documentation for the borealis-pg-cli plugin:
 
 ```shell
@@ -38,6 +36,12 @@ You can use `heroku help` to see the documentation for any command or sub-comman
 
 ```shell
 $ heroku help borealis-pg:extensions:install
+```
+
+For added convenience, execute this command and then follow the instructions it outputs to enable [autocomplete](https://devcenter.heroku.com/articles/heroku-cli-autocomplete#installing-autocomplete) for all installed Heroku CLI commands:
+
+```shell
+$ heroku autocomplete
 ```
 
 #### Database connections
